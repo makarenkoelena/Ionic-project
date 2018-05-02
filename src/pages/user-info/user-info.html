@@ -1,0 +1,26 @@
+<ion-header>
+
+    <ion-navbar color="clmain">
+      <ion-title>Welcome {{newName}}</ion-title>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <ion-list>
+               <ion-title>Your location is {{newLatitude}} {{newLongitude}}</ion-title>
+          <ion-item>
+              <ion-label color="primary" floating> Username </ion-label>
+              <ion-input type="text" [(ngModel)]="name" ></ion-input>
+      
+          </ion-item> 
+         </ion-list> 
+         <button ion-button color="light" round (click)="saveName()">Save</button>
+         <button ion-button color="light" round (click)="find()">Find</button>
+  
+        </ion-content>
+  

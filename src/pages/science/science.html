@@ -1,0 +1,26 @@
+<!--
+  Generated template for the SciencePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>science</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let s of science">
+          <p>{{s.title}}</p>
+          <p>{{s.description}}</p>
+          <ion-img width="200" height= "100" src="{{s.urlToImage}}"></ion-img> 
+          <br>
+          <a href="{{s.url}}">Click me</a>
+        </ion-item>
+      </ion-list> 
+</ion-content>
